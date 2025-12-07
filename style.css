@@ -1,0 +1,124 @@
+body{
+    background-color: rgb(16, 2, 37);
+}
+.navbar{
+    background-color:  rgb(37, 15, 68);
+    text-align: right;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 10px;
+}
+.navbar a{
+    font-family: serif;
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(209, 207, 211);
+    text-decoration: none;
+    padding: 5px;
+}
+.profilepic{
+    background-color:  rgb(37, 15, 68);
+    margin: 25px;
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    border-radius: 10px;
+}
+.normal{
+    font-family: serif;
+    font-size: 25px;
+    font-weight: bold;
+    color:rgb(209, 207, 211); 
+    padding: 5px 100px;
+}
+.effect{
+    padding: 5px 100px;
+    color: rgb(37, 15, 68);
+    position: relative;
+    -webkit-text-stroke: 1px rgb(209, 207, 211); 
+}
+.effect::before{
+    padding: 5px 100px;
+    content: attr(data-text);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width:0;
+    height: 100%;
+    color:rgb(209, 207, 211); 
+    border-right: 2px solid rgb(209, 207, 211);
+    overflow: hidden;
+    animation: animate 6s linear infinite;
+}
+@keyframes animate
+{
+    0%,10%,100%{
+        width: 0;
+    }
+    70%,90%{
+        width: 100;
+    }
+}
+.profilepic img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+}
+.profilewords{
+    background-color:  rgb(37, 15, 68);
+    margin: 25px;
+    padding: 30px;
+    border-radius: 10px;  
+}
+.profilewords p{
+    font-family: serif;
+    font-size: 20px;
+    color:rgb(209, 207, 211); 
+    padding: 5px 100px;
+}
+.contacts{
+    background-color:  rgb(37, 15, 68);
+    margin: 35px 325px;
+    text-align: center;
+    border-radius: 10px;
+    padding: 15px;
+}
+.contacts h1{
+    font-family: serif;
+    font-size: 40px;
+    color:rgb(209, 207, 211); 
+    padding: 10px;
+}
+.contacts span{
+    font-family: serif;
+    font-size: 20px;
+    color:rgb(209, 207, 211); 
+    padding: 25px;
+}
+.aboutme{
+    background-color:  rgb(37, 15, 68);
+    margin: 25px;
+    border-radius: 10px;
+}
+.aboutme p{
+    font-family: serif;
+    font-size: 20px;
+    color:rgb(209, 207, 211); 
+    padding: 25px;
+}
+.projects{
+    background-color:  rgb(37, 15, 68);
+    border-radius: 10px;
+    padding: 25px;
+}
+.projects p{
+    font-family: serif;
+    font-size: 20px;
+    color:rgb(209, 207, 211);
+}
+.projects span{
+    font-family: serif;
+    font-size: 50px;
+    color:rgb(209, 207, 211);
+    padding: 100px;
+}
